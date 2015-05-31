@@ -6,7 +6,7 @@ function getSum(theArray){
         for (i = 2; i < arrayLength+2; i++){
             theSum += Number(theArray[i]);
         }
-        console.log("The sum is: " + theSum);
+        console.log(theSum);
     }
 }
 
