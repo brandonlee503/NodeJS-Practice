@@ -1,0 +1,5 @@
+This is my test file.
+That was a new line.
+That was another new line.
+This is the end of it.
+There should be 4 new lines in total.

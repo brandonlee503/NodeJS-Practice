@@ -1,5 +1,7 @@
+//Set length of command line arguement array for future use ( -2 for 'node' and the program path) 
 arrayLength = process.argv.length-2;
 
+//Function accumulate sum
 function getSum(theArray){
     if(arrayLength > 0){
         theSum = 0;
@@ -10,4 +12,5 @@ function getSum(theArray){
     }
 }
 
+//Call function
 getSum(process.argv);
