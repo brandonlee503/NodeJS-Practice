@@ -2,27 +2,24 @@
 var fs = require("fs");
 
 //Set the command line arguement
-theFile = process.argv[2];
-console.log("This is the file path: " + theFile); //just test
+theFilePath = process.argv[2];
 
 //Open and read the file
-var readFile = fs.readFileSync(theFile);
+var readFile = fs.readFileSync(theFilePath);
 
 //Convert to string from buffer
-readFile.toString();
-
-//should just print out the string
-console.log("This is the buffer to string thing: " + readFile);
+var stringFile = readFile.toString();
 
 //Split string into array of substrings
-//readFile.split();
+stringFile.split();
 
 var theSum = 0;
 
-for (i in readFile) {
-    if (readFile[i] === "\n"){
+for (i in stringFile) {
+    if (stringFile[i] === "\n"){
         theSum += 1;
     }
 }
 
-console.log("This is the total number of newlines: " + theSum);
+//Print out total number of newlines from a file
+console.log(theSum);
